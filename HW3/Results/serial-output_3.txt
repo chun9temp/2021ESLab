@@ -1,0 +1,64 @@
+WiFi example
+
+Scan:
+11 networks available.
+Network: DSL-6740C secured: WPA2 BSSID: C8:BE:19:2:3d:34 RSSI: -77 Ch: 1
+Network: HITRON-89E0 secured: WPA2 BSSID: F8:1D:F:c:89:e8 RSSI: -86 Ch: 1
+Network: Y000235 secured: Unknown BSSID: EC:43:F6:ef:36:a6 RSSI: -89 Ch: 5
+Network: Chung-Guest secured: WPA2 BSSID: DA:40:D0:41:a0:52 RSSI: -62 Ch: 8
+Network:  secured: WPA2 BSSID: 12:2:8E:a4:b4:75 RSSI: -68 Ch: 8
+Network: E9 secured: WPA2 BSSID: 78:54:2E:e7:9:60 RSSI: -89 Ch: 6
+Network: Chung secured: WPA2 BSSID: D2:40:D0:41:a0:52 RSSI: -63 Ch: 8
+Network: Chung-Guest secured: WPA2 BSSID: 16:2:8E:a4:b4:75 RSSI: -68 Ch: 8
+Network: Chung secured: WPA2 BSSID: E:2:8E:a4:b4:75 RSSI: -62 Ch: 8
+Network:  secured: WPA2 BSSID: D6:40:D0:41:a0:52 RSSI: -58 Ch: 8
+Network: MyWLAN secured: WPA2 BSSID: 60:45:CB:c9:22:10 RSSI: -82 Ch: 10
+
+Connecting to Chung-Guest...
+Success
+
+MAC: C4:7F:51:8C:9E:5F
+IP: 10.0.0.32
+Netmask: 255.255.255.0
+Gateway: 10.0.0.1
+RSSI: -59
+
+IP address: 10.0.0.32 
+Sending HTTP request to info.cern.ch...
+sent 38 [GET / HTTP/1.1]
+recv 64 [HTTP/1.1 200 OK]
+
+Done
+Start sensor init
+
+TEMPERATURE = 27.61 degC
+HUMIDITY    = 82.20 %
+PRESSURE is = 1008.82 mBar
+
+MAGNETO_X = -925
+MAGNETO_Y = 403
+MAGNETO_Z = -66
+
+GYRO_X = -210.00
+GYRO_Y = -2800.00
+GYRO_Z = 420.00
+
+ACCELERO_X = 3
+ACCELERO_Y = 16
+ACCELERO_Z = 1017
+
+TEMPERATURE = 27.67 degC
+HUMIDITY    = 82.03 %
+PRESSURE is = 1008.86 mBar
+
+MAGNETO_X = -914
+MAGNETO_Y = 400
+MAGNETO_Z = -65
+
+GYRO_X = -140.00
+GYRO_Y = -2800.00
+GYRO_Z = 490.00
+
+ACCELERO_X = 3
+ACCELERO_Y = 17
+ACCELERO_Z = 1023
