@@ -1,7 +1,7 @@
 #include "mbed.h"
 
 DigitalOut led1(LED1);
-InterruptIn sw(USER_BUTTON);
+InterruptIn sw(BUTTON1);
 EventQueue queue(32*EVENTS_EVENT_SIZE);
 Thread t;
 
@@ -9,8 +9,8 @@ Thread t;
 void rise_handler(void){
     // Toggle LED
     led1=!led1;
-    osThreadId_t fall_t_id=ThisThread::get_id();
-    queue.call(printf,"rise_handler in context %p\n",fall_t_id);
+    //osThreadId_t fall_t_id=ThisThread::get_id();
+    queue.call(printf,"rise_handler in context %p\n",ThisThread::get_id());
 }
 
 void fall_handler(void){
