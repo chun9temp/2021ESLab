@@ -5262,7 +5262,7 @@ int VL53L0X::init_sensor(uint8_t new_addr)
                 return status;
             }
         } else {
-            printf("Invalid new address!\n\r");
+            // printf("Invalid new address!\n\r");
             return VL53L0X_ERROR_INVALID_PARAMS;
         }
     }
