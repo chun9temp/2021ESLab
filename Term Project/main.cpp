@@ -19,7 +19,7 @@ HCSR04 sonic(D2, D4); // (echo, trigger)
 EventQueue queue(32*EVENTS_EVENT_SIZE);
 Thread button_thread;
 TCPSocket socket;
-SocketAddress addr("10.0.0.20",8000);
+SocketAddress addr("192.168.0.15",9000);
 nsapi_error_t response;
 
 bool obsExistence, carExistence;
@@ -35,7 +35,7 @@ void sensor_init() {
 void get_car_existence() {
     uint32_t dist1, dist2, difference;
     laser.get_distance(&dist1);
-    wait_us(50000);
+    wait_us(25000);
     laser.get_distance(&dist2);
     if (dist1 > dist2) {
         difference = dist1 - dist2;
@@ -43,7 +43,7 @@ void get_car_existence() {
     else {
         difference = dist2 - dist1;
     }
-    if (difference>=200) {
+    if (difference>=100) {
         carExistence = true;
         car_led = 1;
     }
@@ -159,7 +159,7 @@ int main()
                 send_road_state(&wifi);
             }
             if (carExistence) {
-                ThisThread::sleep_for(10s);
+                ThisThread::sleep_for(5s);
             }
             lastCarExistence = carExistence;
         }
