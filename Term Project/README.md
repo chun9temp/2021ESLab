@@ -61,7 +61,7 @@ The obstacle detection system has been built up successfully. Since I am still u
 
 3. Set `HOST` and `PORT` in `server.py`.
 
-4. Put all files in [RPi](Rpi/) directory to this directory (`mycar`).
+4. Put all files in [RPi](RPi/) directory to this directory (`mycar`).
 
 #### Run Program
 
